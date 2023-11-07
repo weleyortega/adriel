@@ -1,0 +1,91 @@
+.cd__main{
+  display: block !important;
+ background: #4AC29A;  
+background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);  
+background: linear-gradient(to right, #BDFFF3, #4AC29A) !important;
+
+}
+
+.color__background{
+  background-color: rgb(219, 217, 215);
+  padding: 3em;
+}
+.title__port {
+ text-align: center;
+ color: #000000;
+ margin-bottom: 0;
+ font-size: 2.8rem;
+ 
+}
+.paragrafo{
+  text-align: center;
+}
+
+.carousel {
+ padding: 20px;
+ perspective: 500px;
+ overflow: hidden;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.carousel > * {
+ flex: 0 0 auto;
+}
+.carousel figure {
+ margin: 0;
+ width: 40%;
+ transform-style: preserve-3d;
+ transition: transform 0.5s;
+}
+.carousel figure img {
+ width: 100%;
+ box-sizing: border-box;
+ padding: 0 0px;
+}
+.carousel figure img:not(:first-of-type) {
+ position: absolute;
+ left: 0;
+ top: 0;
+}
+.carousel nav {
+ display: flex;
+ justify-content: center;
+ margin: 20px 0 0;
+}
+.carousel nav button {
+ flex: 0 0 auto;
+ margin: 0 5px;
+ cursor: pointer;
+ color: #333;
+ background: none;
+ border: 1px solid;
+ letter-spacing: 1px;
+ padding: 5px 10px;
+}
+
+@media screen and (max-width: 1000px){
+ 
+  .title__port {
+   font-size: 2rem;
+   
+  }
+  .carousel {
+   padding: 10px;
+   perspective: 150px;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+  .carousel > * {
+   flex: 0 0 auto;
+  }
+  .carousel figure {
+   margin: 0;
+   width: 80%;
+   transform-style: preserve-3d;
+   transition: transform 0.5s;
+  }
+  
+}
